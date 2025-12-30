@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StarlinHacks</title>
+
+  <style>
+    *{
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+    body{
+      margin:0;
+      background:#0b0f1a;
+      color:#ffffff;
+    }
+    header{
+      background:#020617;
+      padding:15px 20px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+      z-index:10;
+    }
+    header h1{
+      margin:0;
+      color:#38bdf8;
+    }
+    nav a{
+      color:#fff;
+      margin:0 8px;
+      text-decoration:none;
+      font-size:14px;
+    }
+    .btn{
+      background:#38bdf8;
+      color:#000;
+      padding:8px 14px;
+      border-radius:6px;
+      font-weight:bold;
+    }
+    .hero{
+      padding:70px 20px;
+      text-align:center;
+      background:linear-gradient(135deg,#020617,#0f172a);
+    }
+    .hero h2{
+      font-size:30px;
+    }
+    .hero p{
+      color:#cbd5f5;
+    }
+    .container{
+      width:90%;
+      max-width:1100px;
+      margin:auto;
+      padding:40px 0;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+    }
+    .card{
+      background:#020617;
+      border:1px solid #1e293b;
+      border-radius:12px;
+      padding:20px;
+      text-align:center;
+      transition:0.3s;
+    }
+    .card:hover{
+      transform:scale(1.05);
+      box-shadow:0 0 20px #38bdf8;
+    }
+    .card h3{
+      color:#38bdf8;
+    }
+    .card button{
+      margin-top:15px;
+      background:#38bdf8;
+      border:none;
+      padding:10px 18px;
+      border-radius:8px;
+      font-weight:bold;
+      cursor:pointer;
+    }
+    input{
+      width:90%;
+      padding:10px;
+      margin:8px 0;
+      border-radius:6px;
+      border:none;
+    }
+    footer{
+      background:#020617;
+      text-align:center;
+      padding:20px;
+      color:#94a3b8;
+      font-size:13px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>StarlinHacks</h1>
+  <nav>
+    <a href="#productos">Productos</a>
+    <a href="#login">Login</a>
+    <a href="#pagos">Pagos</a>
+    <a href="#admin">Admin</a>
+    <a href="#productos" class="btn">Comprar</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Plataforma digital todo en uno</h2>
+  <p>Productos • Login • Pagos • Panel Admin • App</p>
+</section>
+
+<section id="productos" class="container">
+  <h2>Productos destacados</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Llave Premium</h3>
+      <p>Entrega inmediata</p>
+      <button>Comprar</button>
+    </div>
+    <div class="card">
+      <h3>Pack Gamer</h3>
+      <p>Funciones exclusivas</p>
+      <button>Comprar</button>
+    </div>
+    <div class="card">
+      <h3>Membresía Pro</h3>
+      <p>Soporte prioritario</p>
+      <button>Comprar</button>
+    </div>
+  </div>
+</section>
+
+<section id="login" class="container">
+  <h2>Login de usuario</h2>
+  <div class="card">
+    <input type="text" placeholder="Usuario">
+    <input type="password" placeholder="Contraseña">
+    <button onclick="alert('Login demo')">Entrar</button>
+  </div>
+</section>
+
+<section id="pagos" class="container">
+  <h2>Pagos</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>PayPal</h3>
+      <button onclick="alert('Pago PayPal demo')">Pagar</button>
+    </div>
+    <div class="card">
+      <h3>Tarjeta</h3>
+      <button onclick="alert('Pago tarjeta demo')">Pagar</button>
+    </div>
+  </div>
+</section>
+
+<section id="admin" class="container">
+  <h2>Panel Administrador</h2>
+  <div class="card">
+    <p>✔ Ver usuarios</p>
+    <p>✔ Ver compras</p>
+    <p>✔ Agregar productos</p>
+    <button onclick="alert('Panel admin demo')">Entrar</button>
+  </div>
+</section>
+
+<footer>
+  © 2025 StarlinHacks — Todos los derechos reservados
+</footer>
+
+</body>
+  </html>
